@@ -6,3 +6,4 @@ height = 46;
 action = undefined;
 
 is_focused = false;
+hover = false;

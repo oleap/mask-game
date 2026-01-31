@@ -24,6 +24,7 @@
   },
   "name":"mask-game",
   "resources":[
+    {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"breakable_wall_object","path":"objects/breakable_wall_object/breakable_wall_object.yy",},},
     {"id":{"name":"floor_gap_object","path":"objects/floor_gap_object/floor_gap_object.yy",},},
     {"id":{"name":"mask_badger_object","path":"objects/mask_badger_object/mask_badger_object.yy",},},
@@ -39,6 +40,8 @@
     {"id":{"name":"pond_object","path":"objects/pond_object/pond_object.yy",},},
     {"id":{"name":"rock_object","path":"objects/rock_object/rock_object.yy",},},
     {"id":{"name":"wall_object","path":"objects/wall_object/wall_object.yy",},},
+    {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"wolf_object","path":"objects/wolf_object/wolf_object.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"collision","path":"scripts/collision/collision.yy",},},
@@ -61,7 +64,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
