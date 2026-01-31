@@ -1,0 +1,1 @@
+if (is_focused && is_undefined(action) == false) action();
