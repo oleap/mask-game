@@ -29,3 +29,15 @@ function collision_with_rock_y(player, rock, _yadd){
 	if (player.player_mask == 1)
 		rock.y += _yadd;
 }
+
+function collision_with_breakable_wall_x(player, breakable_wall, _xadd){
+	collision_with_wall_x(player, _xadd)
+	if (player.player_mask == 4)
+		instance_destroy(breakable_wall)
+}
+
+function collision_with_breakable_wall_y(player, breakable_wall, _yadd){
+	collision_with_wall_y(player, _yadd)
+	if (player.player_mask == 4)
+		instance_destroy(breakable_wall)
+}

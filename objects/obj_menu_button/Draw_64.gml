@@ -1,15 +1,28 @@
-var mx = device_mouse_x(0);
-var my = device_mouse_y(0);
+var mx = device_mouse_x_to_gui(0);
+var my = device_mouse_y_to_gui(0);
 
-var hover =
-    mx > x - width/2 && mx < x + width/2 &&
-    my > y - height/2 && my < y + height/2;
+var left   = x - width * 0.5;
+var right  = x + width * 0.5;
+var top    = y - height * 0.5;
+var bottom = y + height * 0.5;
 
-var active = hover || is_focused;
+hover = (mx >= left && mx <= right && my >= top && my <= bottom);
 
-draw_set_color(active ? c_gray : c_white);
-draw_rectangle(x - width/2, y - height/2, x + width/2, y + height/2, false);
+// FILL
+if (hover)
+    draw_set_color(c_gray);
+else
+    draw_set_color(c_dkgray);
 
+draw_rectangle(left, top, right, bottom, false);
+
+// OUTLINE (valfritt fokus)
+if (hover) {
+    draw_set_color(c_ltgray);
+    draw_rectangle(left, top, right, bottom, true);
+}
+
+// TEXT
 draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);

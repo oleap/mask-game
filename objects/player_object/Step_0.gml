@@ -29,6 +29,12 @@ if (_hspd != 0 || _vspd != 0)
 		collision_with_floor_gap_x(self, _xadd)
 	}
 	
+	target = instance_place(x, y, breakable_wall_object)
+	if (place_meeting(x, y, breakable_wall_object))
+	{
+	    collision_with_breakable_wall_x(self, target, _xadd)
+	}
+	
 	y += _yadd;
 	if (place_meeting(x, y, wall_object))
 	{
@@ -46,5 +52,10 @@ if (_hspd != 0 || _vspd != 0)
 		collision_with_floor_gap_y(self, _yadd)
 	}
 	
+	target = instance_place(x, y, breakable_wall_object)
+	if (place_meeting(x, y, breakable_wall_object))
+	{
+	    collision_with_breakable_wall_y(self, target, _yadd)
+	}
 
 }

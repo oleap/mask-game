@@ -32,11 +32,13 @@ function menu_spawn(_state) {
 function start_game() {
     global.game_started = true;
     menu_spawn(MenuState.NONE);
+	room_goto(Room1);
 }
 
 function go_main_menu() {
     global.game_started = false;
     menu_spawn(MenuState.MAIN);
+	room_goto(rm_menu);
 }
 
 function restart_room() {
