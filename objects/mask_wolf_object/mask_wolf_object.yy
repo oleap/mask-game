@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"player_wolf_sprite",
-    "path":"sprites/player_wolf_sprite/player_wolf_sprite.yy",
+    "name":"AWolfMaskPickup",
+    "path":"sprites/AWolfMaskPickup/AWolfMaskPickup.yy",
   },
   "spriteMaskId":null,
   "visible":true,

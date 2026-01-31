@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"player_badger_sprite",
-    "path":"sprites/player_badger_sprite/player_badger_sprite.yy",
+    "name":"ABadgerMaskPickup",
+    "path":"sprites/ABadgerMaskPickup/ABadgerMaskPickup.yy",
   },
   "spriteMaskId":null,
   "visible":true,

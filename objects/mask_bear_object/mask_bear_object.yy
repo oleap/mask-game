@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"mask_bear_sprite",
-    "path":"sprites/mask_bear_sprite/mask_bear_sprite.yy",
+    "name":"ABearMaskPickup",
+    "path":"sprites/ABearMaskPickup/ABearMaskPickup.yy",
   },
   "spriteMaskId":null,
   "visible":true,

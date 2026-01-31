@@ -11,8 +11,8 @@
   "name":"obj_dialog_box",
   "overriddenProperties":[],
   "parent":{
-    "name":"mask-game",
-    "path":"mask-game.yyp",
+    "name":"objects",
+    "path":"folders/objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

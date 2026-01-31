@@ -8,6 +8,11 @@ var _vspd = _down - _up;
 
 if (_hspd != 0 || _vspd != 0)
 {
+	if (!self.doing_action)
+	{
+		player_set_move_sprite(self);
+	}
+	
     _dir = point_direction(0, 0, _hspd, _vspd);
     _xadd = lengthdir_x(player_speed, _dir);
     _yadd = lengthdir_y(player_speed, _dir);
@@ -58,4 +63,11 @@ if (_hspd != 0 || _vspd != 0)
 	    collision_with_breakable_wall_y(self, target, _yadd)
 	}
 
+}
+else
+{
+	if (!self.doing_action)
+	{
+		player_set_idle_sprite(self)
+	}
 }

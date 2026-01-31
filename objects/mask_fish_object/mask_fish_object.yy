@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"player_fish_sprite",
-    "path":"sprites/player_fish_sprite/player_fish_sprite.yy",
+    "name":"AFishMaskPickup",
+    "path":"sprites/AFishMaskPickup/AFishMaskPickup.yy",
   },
   "spriteMaskId":null,
   "visible":true,

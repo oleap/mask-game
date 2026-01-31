@@ -8,6 +8,7 @@ if (self.player_mask == 3)
 	
 	if (place_meeting(self.x, self.y, source))
 	{
+		player_set_action_sprite(self);
 	    x = dst.x
 		y = dst.y
 	}
@@ -26,6 +27,7 @@ else if (self.player_mask == 5)
 
 	if (x_close && y_overlap)
 	{
+		player_set_action_sprite(self);
 		dst.follow = !dst.follow;
 	}
 }

@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"rock_sprite",
-    "path":"sprites/rock_sprite/rock_sprite.yy",
+    "name":"BearObject",
+    "path":"sprites/BearObject/BearObject.yy",
   },
   "spriteMaskId":null,
   "visible":true,

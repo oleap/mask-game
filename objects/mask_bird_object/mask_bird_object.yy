@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"mask_bird_sprite",
-    "path":"sprites/mask_bird_sprite/mask_bird_sprite.yy",
+    "name":"ABirdMaskPickup",
+    "path":"sprites/ABirdMaskPickup/ABirdMaskPickup.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"wolf_sprite",
-    "path":"sprites/wolf_sprite/wolf_sprite.yy",
+    "name":"WolfObject",
+    "path":"sprites/WolfObject/WolfObject.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_dialog_functions",
   "parent":{
-    "name":"mask-game",
-    "path":"mask-game.yyp",
+    "name":"scripts",
+    "path":"folders/scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
