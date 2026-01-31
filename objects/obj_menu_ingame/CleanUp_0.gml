@@ -1,0 +1,1 @@
+with (obj_menu_button) instance_destroy();
