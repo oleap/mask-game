@@ -23,7 +23,9 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"variable_name","filters":[],"listItems":[],"multiselect":false,"name":"variable_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"breakable_wall_sprite","path":"sprites/breakable_wall_sprite/breakable_wall_sprite.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"breakable_wall_sprite","varType":5,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

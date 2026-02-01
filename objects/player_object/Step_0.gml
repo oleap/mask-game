@@ -13,6 +13,15 @@ if (_hspd != 0 || _vspd != 0)
 		player_set_move_sprite(self);
 	}
 	
+	if (_hspd < 0)
+	{
+		self.image_xscale = -1;
+	}
+	else
+	{
+		self.image_xscale = 1;
+	}
+	
     _dir = point_direction(0, 0, _hspd, _vspd);
     _xadd = lengthdir_x(player_speed, _dir);
     _yadd = lengthdir_y(player_speed, _dir);
@@ -23,10 +32,23 @@ if (_hspd != 0 || _vspd != 0)
 	    collision_with_wall_x(self, _xadd)
 	}
 	
+	target = instance_place(x, y, gate_object)
+	if (place_meeting(x, y, gate_object))
+	{
+		if (!target.is_open)
+			collision_with_wall_x(self, _xadd);
+	}
+	
 	target = instance_place(x, y, rock_object)
 	if (place_meeting(x, y, rock_object))
 	{
 		collision_with_rock_x(self, target, _xadd)
+	}
+	
+	target = instance_place(x, y, ice_rock_object)
+	if (place_meeting(x, y, ice_rock_object))
+	{
+		collision_with_ice_rock_x(self, target, _xadd, _hspd)
 	}
 	
 	if (place_meeting(x, y, floor_gap_object))
@@ -46,10 +68,23 @@ if (_hspd != 0 || _vspd != 0)
 	    collision_with_wall_y(self, _yadd)
 	}
 	
+	target = instance_place(x, y, gate_object)
+	if (place_meeting(x, y, gate_object))
+	{
+		if (!target.is_open)
+			collision_with_wall_y(self, _yadd)
+	}
+	
 	target = instance_place(x, y, rock_object)
 	if (place_meeting(x, y, rock_object))
 	{
 		collision_with_rock_y(self, target, _yadd)
+	}
+	
+	target = instance_place(x, y, ice_rock_object)
+	if (place_meeting(x, y, ice_rock_object))
+	{
+		collision_with_ice_rock_y(self, target, _yadd, _vspd)
 	}
 	
 	if (place_meeting(x, y, floor_gap_object))

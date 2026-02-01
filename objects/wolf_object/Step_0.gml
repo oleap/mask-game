@@ -11,6 +11,15 @@ if (self.follow)
 		var stop_dist = 96;
 		var dir = point_direction(x, y, player_to_follow.x, player_to_follow.y);
 		var dist = point_distance(x, y, player_to_follow.x, player_to_follow.y);
+		
+		if (dir > 90 && dir < 270)
+		{
+			self.image_xscale = -1;
+		}
+		else
+		{
+			self.image_xscale = 1;
+		}
 
 		
 		if (dist > stop_dist)

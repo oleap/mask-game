@@ -41,3 +41,17 @@ function collision_with_breakable_wall_y(player, breakable_wall, _yadd){
 	if (player.player_mask == 4)
 		instance_destroy(breakable_wall)
 }
+
+function collision_with_ice_rock_x(player, ice_rock, _xadd, _hdir){
+	collision_with_wall_x(player, _xadd)
+	if (player.player_mask == 1)
+		ice_rock.speed = 6;
+		ice_rock.direction += _hdir;
+}
+
+function collision_with_ice_rock_y(player, ice_rock, _yadd, _vdir){
+	collision_with_wall_y(player, _yadd)
+	if (player.player_mask == 1)
+		ice_rock.speed = 6;
+		ice_rock.direction += _vdir
+}
