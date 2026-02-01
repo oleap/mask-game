@@ -30,6 +30,13 @@ function collision_with_rock_x(player, rock, _xadd){
 	collision_with_wall_x(player, _xadd)
 	if (player.player_mask == 1)
 		rock.x += _xadd;
+		
+		if (place_meeting(x, y, wall_object))
+		|| (place_meeting(x, y, gate_object))
+		|| (place_meeting(x, y, rock_object))
+		{
+			rock.x -= _xadd
+		}
 }
 
 function collision_with_rock_y(player, rock, _yadd){
