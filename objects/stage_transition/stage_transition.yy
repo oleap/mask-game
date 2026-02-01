@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"rock_object",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"stage_transition",
+  "eventList":[],
   "managed":true,
-  "name":"rock_object",
+  "name":"stage_transition",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"BearObject",
-    "path":"sprites/BearObject/BearObject.yy",
+    "name":"gate_sprite_open",
+    "path":"sprites/gate_sprite_open/gate_sprite_open.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -9,6 +9,7 @@ if (self.player_mask == 3)
 	if (place_meeting(self.x, self.y, source))
 	{
 		player_set_action_sprite(self);
+		audio_play_sound()
 	    x = dst.x
 		y = dst.y
 	}
