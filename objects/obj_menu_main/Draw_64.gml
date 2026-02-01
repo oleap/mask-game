@@ -1,14 +1,34 @@
 var w = display_get_gui_width();
 var h = display_get_gui_height();
 
-draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-draw_text(w/2, h*0.25, "MASK");
-draw_text(w/2, h*0.31, "Top-down puzzle / maze");
+// --- TITTEL OG UNDERTEKST ---
+var _title_y = h * 0.25;
+var _sub_y = h * 0.31;
 
-// How to play (kort)
+
+draw_set_color(c_black);
+draw_text(w/2 + 2, _title_y + 2, "TO BE DECIDED");
+draw_text(w/2 + 1, _sub_y + 1, "Top-down puzzle / maze");
+
+
+draw_set_color(c_yellow); 
+draw_text(w/2, _title_y, "TO BE DECIDED");
+draw_set_color(c_white);
+draw_text(w/2, _sub_y, "Top-down puzzle / maze");
+
+
+// --- HOW TO PLAY ---
 draw_set_valign(fa_top);
-draw_text(w/2, h*0.38,
-"How to play:\n- Move with WASD/Arrow keys\n- Mask mechanichs (coming)\n- Reach the goal");
+var _play_y = h * 0.38;
+var _info = "How to play:\n- Move with WASD/Arrow keys\n- Space is action key\n- More mechanichs coming)\n- Reach the goal";
+
+
+draw_set_color(c_black);
+draw_text(w/2 + 1, _play_y + 1, _info);
+
+
+draw_set_color(c_lime); 
+draw_text(w/2, _play_y, _info);
