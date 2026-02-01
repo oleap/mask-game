@@ -10,12 +10,11 @@ var _sub_y = h * 0.31;
 
 
 draw_set_color(c_black);
-draw_text(w/2 + 2, _title_y + 2, "TO BE DECIDED");
-draw_text(w/2 + 1, _sub_y + 1, "Top-down puzzle / maze");
+
 
 
 draw_set_color(c_yellow); 
-draw_text(w/2, _title_y, "TO BE DECIDED");
+draw_text(w/2, _title_y, "JAMASK");
 draw_set_color(c_white);
 draw_text(w/2, _sub_y, "Top-down puzzle / maze");
 
