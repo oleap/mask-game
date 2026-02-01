@@ -6,6 +6,14 @@ function collision_with_wall_y(player, _yadd){
 	player.y -= _yadd;
 }
 
+function wolf_collision_with_wall_x(wolf, _xadd){
+	wolf.x -= _xadd;
+}
+
+function wolf_collision_with_wall_y(wolf, _yadd){
+	wolf.y -= _yadd;
+}
+
 function collision_with_floor_gap_x(player, _xadd){
 	if (player.player_mask != 2) {
 		collision_with_wall_x(player, _xadd)

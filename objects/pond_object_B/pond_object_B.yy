@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"breakable_wall_object",
+  "%Name":"pond_object_B",
   "eventList":[],
   "managed":true,
-  "name":"breakable_wall_object",
+  "name":"pond_object_B",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
@@ -24,14 +24,15 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"variable_name","filters":[],"listItems":[],"multiselect":false,"name":"variable_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"breakable_wall_sprite","path":"sprites/breakable_wall_sprite/breakable_wall_sprite.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"breakable_wall_sprite","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"pond_id","filters":[],"listItems":[],"multiselect":false,"name":"pond_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"target","filters":[],"listItems":[],"multiselect":false,"name":"target","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"breakable_wall_sprite_alt",
-    "path":"sprites/breakable_wall_sprite_alt/breakable_wall_sprite_alt.yy",
+    "name":"pond_sprite",
+    "path":"sprites/pond_sprite/pond_sprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

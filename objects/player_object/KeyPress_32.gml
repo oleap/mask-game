@@ -12,6 +12,19 @@ if (self.player_mask == 3)
 	    x = dst.x
 		y = dst.y
 	}
+	
+	var source_b = instance_nth_nearest(x, y, pond_object_B, 1);
+	var dst_b = instance_nth_nearest(x, y, pond_object_B, 2);
+
+	if (!instance_exists(source_b) || !instance_exists(dst_b))
+	    exit;
+	
+	if (place_meeting(self.x, self.y, source_b))
+	{
+		player_set_action_sprite(self);
+	    x = dst_b.x
+		y = dst_b.y
+	}
 }
 else if (self.player_mask == 5)
 {

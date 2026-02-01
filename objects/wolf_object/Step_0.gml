@@ -24,8 +24,21 @@ if (self.follow)
 		
 		if (dist > stop_dist)
         {
-	        x += lengthdir_x(wolf_speed, dir);
-		    y += lengthdir_y(wolf_speed, dir);
+	        var _xadd = lengthdir_x(wolf_speed, dir);
+			
+			x += _xadd
+			if (place_meeting(x, y, wall_object))
+			{
+			    wolf_collision_with_wall_x(self, _xadd)
+			}
+			
+		    var _yadd = lengthdir_y(wolf_speed, dir);
+			
+			y += _yadd
+			if (place_meeting(x, y, wall_object))
+			{
+			    wolf_collision_with_wall_y(self, _xadd)
+			}
 		}
 	}
 }
