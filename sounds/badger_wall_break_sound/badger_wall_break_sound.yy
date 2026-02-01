@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"badger_wall_break_sound",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":2.1159184,
+  "exportDir":"",
+  "name":"badger_wall_break_sound",
+  "parent":{
+    "name":"sounds",
+    "path":"folders/sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"badger_wall_break_sound.mp3",
+  "volume":1.0,
+}
